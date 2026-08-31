@@ -4,9 +4,15 @@ USER root
 
 WORKDIR /home/steam
 
-# CS 1.6 server fayllarini tortish
-RUN ./steamcmd.sh +login anonymous +force_install_dir /home/steam/hlds +app_update 90 validate +quit || true
-RUN ./steamcmd.sh +login anonymous +force_install_dir /home/steam/hlds +app_update 90 validate +quit || true
+# Cache bust: 2026-08-31
+# HLDS yuklab olish (xatolar ko'rinsin deb || true olib tashlandi)
+RUN ./steamcmd.sh +login anonymous +force_install_dir /home/steam/hlds +app_update 90 validate +quit && \
+    echo "HLDS 1-chi marta yuklandi" && \
+    ls /home/steam/hlds/cstrike/ || echo "CSTRIKE topilmadi!"
+
+RUN ./steamcmd.sh +login anonymous +force_install_dir /home/steam/hlds +app_update 90 validate +quit && \
+    echo "HLDS 2-chi marta yuklandi" && \
+    ls /home/steam/hlds/cstrike/
 
 WORKDIR /home/steam/hlds
 
@@ -19,7 +25,14 @@ RUN apt-get update && apt-get install -y curl ca-certificates && \
     echo "linux addons/metamod/dlls/metamod_i386.so" > cstrike/addons/metamod/plugins.ini
 
 # liblist.gam ni yangilash
-RUN sed -i 's/gamedll_linux "dlls\/cs.so"/gamedll_linux "addons\/metamod\/dlls\/metamod_i386.so"/g' cstrike/liblist.gam
+RUN if [ -f cstrike/liblist.gam ]; then \
+        sed -i 's/gamedll_linux "dlls\/cs.so"/gamedll_linux "addons\/metamod\/dlls\/metamod_i386.so"/g' cstrike/liblist.gam; \
+        echo "liblist.gam yangilandi!"; \
+    else \
+        echo "XATO: liblist.gam topilmadi! HLDS to'liq yuklanmagan."; \
+        ls -la cstrike/ || echo "cstrike papkasi ham yo'q!"; \
+        exit 1; \
+    fi
 
 # AmxModX o'rnatish
 RUN curl -sL -o base.tar.gz http://www.amxmodx.org/release/amxmodx-1.8.2-base-linux.tar.gz && \
@@ -27,12 +40,10 @@ RUN curl -sL -o base.tar.gz http://www.amxmodx.org/release/amxmodx-1.8.2-base-li
     curl -sL -o cstrike.tar.gz http://www.amxmodx.org/release/amxmodx-1.8.2-cstrike-linux.tar.gz && \
     tar -xzf cstrike.tar.gz -C cstrike/ && rm cstrike.tar.gz
 
-# AmxModX ni Metamod orqali yoqish
 RUN echo "linux addons/amxmodx/dlls/amxmodx_mm_i386.so" >> cstrike/addons/metamod/plugins.ini
 
-# steamclient.so bog'lash
 RUN mkdir -p ~/.steam/sdk32 && \
-    ln -sf /home/steam/.steam/sdk32/steamclient.so ~/.steam/sdk32/steamclient.so
+    ln -sf /home/steam/.steam/sdk32/steamclient.so ~/.steam/sdk32/steamclient.so || true
 
 COPY server.cfg /home/steam/hlds/cstrike/server.cfg
 
