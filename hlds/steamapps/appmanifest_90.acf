@@ -1,0 +1,40 @@
+"AppState"
+{
+	"appid"		"90"
+	"Universe"		"1"
+	"LauncherPath"		"C:\\Users\\abdur\\OneDrive\\Desktop\\game\\cs16_server\\steamcmd\\steamcmd.exe"
+	"name"		"Half-Life Dedicated Server"
+	"StateFlags"		"1026"
+	"installdir"		"Half-Life"
+	"LastUpdated"		"0"
+	"LastPlayed"		"0"
+	"SizeOnDisk"		"0"
+	"StagingSize"		"0"
+	"buildid"		"0"
+	"LastOwner"		"76561202049188201"
+	"DownloadType"		"1"
+	"UpdateResult"		"0"
+	"BytesToDownload"		"446886960"
+	"BytesDownloaded"		"149760208"
+	"BytesToStage"		"902990046"
+	"BytesStaged"		"292340389"
+	"TargetBuildID"		"15961496"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+	}
+	"SharedDepots"
+	{
+		"1"		"70"
+		"11"		"10"
+		"71"		"70"
+	}
+	"UserConfig"
+	{
+	}
+	"MountedConfig"
+	{
+	}
+}

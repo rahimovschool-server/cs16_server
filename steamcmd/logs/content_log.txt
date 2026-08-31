@@ -1,0 +1,160 @@
+
+
+[2026-08-31 16:53:53] Client version: 1785799152
+[2026-08-31 16:53:53] Load failed: C:\Users\abdur\OneDrive\Desktop\game\cs16_server\steamcmd\steamapps\libraryfolders.vdf.
+[2026-08-31 16:53:53] Load failed: C:\Users\abdur\OneDrive\Desktop\game\cs16_server\steamcmd\config\libraryfolders.vdf.
+[2026-08-31 16:53:53] Steam library folders configuration will be reset.
+[2026-08-31 16:53:53] No install folder configuration files found.
+[2026-08-31 16:53:53] Loaded 0 apps from install folder "C:\Users\abdur\OneDrive\Desktop\game\cs16_server\steamcmd\steamapps\appmanifest_*.acf".
+[2026-08-31 16:53:53] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-31 16:54:10] Loaded 0 apps from install folder "c:\users\abdur\onedrive\desktop\game\cs16_server\hlds\steamapps\appmanifest_*.acf".
+[2026-08-31 16:54:10] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-31 16:54:11] AppID 90 state changed : Update Required,
+[2026-08-31 16:54:11] AppID 90 scheduler update : Priority First, not played for 0 seconds, update disabled for 0 seconds
+[2026-08-31 16:54:11] AppID 90 state changed : Update Required,Update Queued,
+[2026-08-31 16:54:12] AppID 90 state changed : Update Required,Update Queued,Update Running,
+[2026-08-31 16:54:12] AppID 90 scheduler update : Priority First, not played for 1 seconds, update disabled for 0 seconds
+[2026-08-31 16:54:12] AppID 90 App update changed : Running Update,
+[2026-08-31 16:54:12] AppID 90 App update changed : Running Update,Reconfiguring,
+[2026-08-31 16:54:13] CDepotDownloadMgr::BYldRequestDepotManifest(App: 90, Depot: 5, Manifest: 2602921513184876182, branch: ): Failed to get manifest request code, 'No Connection'
+[2026-08-31 16:54:14] CDepotDownloadMgr::BYldRequestDepotManifest(App: 90, Depot: 1004, Manifest: 5612541580377302256, branch: ): Failed to get manifest request code, 'No Connection'
+[2026-08-31 16:54:14] AppID 90 update canceled : Failed downloading 2 manifests (No connection)
+[2026-08-31 16:54:14] AppID 90 App update changed : Running Update,Reconfiguring,Stopping,
+[2026-08-31 16:54:14] AppID 90 App update changed : Running Update,Stopping,
+[2026-08-31 16:54:14] AppID 90 App update changed : None
+[2026-08-31 16:54:14] AppID 90 state changed : Update Required,Update Queued, (No connection)
+[2026-08-31 16:54:14] AppID 90 state changed : Update Required, (Update delayed for 30 secs)
+[2026-08-31 16:54:14] AppID 90 scheduler finished : removed from schedule (result No connection, state 0xa) 
+
+
+[2026-08-31 16:54:19] Client version: 1785799152
+[2026-08-31 16:54:19] Loaded Steam library folders configuration: C:\Users\abdur\OneDrive\Desktop\game\cs16_server\steamcmd\steamapps\libraryfolders.vdf
+[2026-08-31 16:54:19] Loaded 0 apps from install folder "C:\Users\abdur\OneDrive\Desktop\game\cs16_server\steamcmd\steamapps\appmanifest_*.acf".
+[2026-08-31 16:54:19] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-31 16:54:21] Loaded 1 apps from install folder "c:\users\abdur\onedrive\desktop\game\cs16_server\hlds\steamapps\appmanifest_*.acf".
+[2026-08-31 16:54:21] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-31 16:54:21] AppID 70 state changed : Update Required,Shared Only,
+[2026-08-31 16:54:21] Dependency added: parent 70, child 90, depot 1
+[2026-08-31 16:54:21] AppID 10 state changed : Update Required,Shared Only,
+[2026-08-31 16:54:21] Dependency added: parent 10, child 90, depot 11
+[2026-08-31 16:54:21] Dependency added: parent 70, child 90, depot 71
+[2026-08-31 16:54:21] AppID 90 scheduler update : Priority First, not played for 10 seconds, update disabled for 0 seconds
+[2026-08-31 16:54:21] AppID 90 state changed : Update Required,Update Queued, (Update delayed for 23 secs)
+[2026-08-31 16:54:21] AppID 90 state changed : Update Required,Update Queued,Update Running,
+[2026-08-31 16:54:21] AppID 70 state changed : Update Required,Shared Only,Update Running,
+[2026-08-31 16:54:21] AppID 10 state changed : Update Required,Shared Only,Update Running,
+[2026-08-31 16:54:21] AppID 90 App update changed : Running Update,
+[2026-08-31 16:54:21] AppID 90 App update changed : Running Update,Reconfiguring,
+[2026-08-31 16:54:23] Got 28 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 173 / Launcher 3)
+[2026-08-31 16:54:23] Moving to source priority class '2'
+[2026-08-31 16:54:23] Created download interface of type 'CDN' (2) to host fastly.cdn.steampipe.steamcontent.com (fastly.cdn.steampipe.steamcontent.com)
+[2026-08-31 16:54:23] Created download interface of type 'CDN' (2) to host steampipe.akamaized.net (steampipe.akamaized.net)
+[2026-08-31 16:54:23] Created download interface of type 'SteamCache' (7) to host cache6-fra2.steamcontent.com (cache6-fra2.steamcontent.com)
+[2026-08-31 16:54:23] Created download interface of type 'SteamCache' (7) to host cache10-fra2.steamcontent.com (cache10-fra2.steamcontent.com)
+[2026-08-31 16:54:23] Created download interface of type 'SteamCache' (7) to host cache2-sto1.steamcontent.com (cache2-sto1.steamcontent.com)
+[2026-08-31 16:54:23] Created download interface of type 'SteamCache' (7) to host cache7-sto1.steamcontent.com (cache7-sto1.steamcontent.com)
+[2026-08-31 16:54:23] Created download interface of type 'SteamCache' (7) to host cache16-fra2.steamcontent.com (cache16-fra2.steamcontent.com)
+[2026-08-31 16:54:23] Created download interface of type 'SteamCache' (7) to host cache8-fra1.steamcontent.com (cache8-fra1.steamcontent.com)
+[2026-08-31 16:54:23] HTTP (CDN,31) - fastly.cdn.steampipe.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: fastly.cdn.steampipe.steamcontent.com): AuthenticateDepotID (11) - Success!
+[2026-08-31 16:54:23] HTTP/2 available
+[2026-08-31 16:54:23] Created dual-stack http client
+[2026-08-31 16:54:27] HTTPS (CDN,31) - fastly.cdn.steampipe.steamcontent.com ([2a04:4e42:92::850]:443 / [2a04:4e42:92::850]:443, host: fastly.cdn.steampipe.steamcontent.com): fastly.cdn.steampipe.steamcontent.com/depot/11/manifest/3018093494972814332/5/16960529379684353169 - manifest request received 200 (OK) HTTP response
+[2026-08-31 16:54:30] HTTPS (SteamCache,192) - cache7-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c605]:443 / [2a01:bc80:1:100::a2fe:c605]:443, host: cache7-sto1.steamcontent.com): Negotiated HTTP/2
+
+
+[2026-08-31 16:54:46] Client version: 1785799152
+[2026-08-31 16:54:46] Loaded Steam library folders configuration: C:\Users\abdur\OneDrive\Desktop\game\cs16_server\steamcmd\steamapps\libraryfolders.vdf
+[2026-08-31 16:54:46] Loaded 0 apps from install folder "C:\Users\abdur\OneDrive\Desktop\game\cs16_server\steamcmd\steamapps\appmanifest_*.acf".
+[2026-08-31 16:54:46] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-31 16:54:47] Loaded 3 apps from install folder "c:\users\abdur\onedrive\desktop\game\cs16_server\hlds\steamapps\appmanifest_*.acf".
+[2026-08-31 16:54:47] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-08-31 16:54:48] AppID 90 scheduler update : Priority First, not played for 37 seconds, update disabled for 0 seconds
+[2026-08-31 16:54:48] AppID 90 state changed : Update Required,Update Queued,
+[2026-08-31 16:54:48] AppID 90 state changed : Update Required,Update Queued,Update Running,
+[2026-08-31 16:54:48] AppID 70 state changed : Update Required,Shared Only,Update Running,
+[2026-08-31 16:54:48] AppID 10 state changed : Update Required,Shared Only,Update Running,
+[2026-08-31 16:54:48] AppID 90 App update changed : Running Update,
+[2026-08-31 16:54:48] AppID 90 App update changed : Running Update,Reconfiguring,
+[2026-08-31 16:54:49] Got 28 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 173 / Launcher 3)
+[2026-08-31 16:54:49] Moving to source priority class '2'
+[2026-08-31 16:54:49] Created download interface of type 'CDN' (2) to host steampipe.akamaized.net (steampipe.akamaized.net)
+[2026-08-31 16:54:49] Created download interface of type 'CDN' (2) to host fastly.cdn.steampipe.steamcontent.com (fastly.cdn.steampipe.steamcontent.com)
+[2026-08-31 16:54:49] Created download interface of type 'SteamCache' (7) to host cache16-fra2.steamcontent.com (cache16-fra2.steamcontent.com)
+[2026-08-31 16:54:49] Created download interface of type 'SteamCache' (7) to host cache7-sto1.steamcontent.com (cache7-sto1.steamcontent.com)
+[2026-08-31 16:54:49] Created download interface of type 'SteamCache' (7) to host cache10-fra2.steamcontent.com (cache10-fra2.steamcontent.com)
+[2026-08-31 16:54:49] Created download interface of type 'SteamCache' (7) to host cache2-sto1.steamcontent.com (cache2-sto1.steamcontent.com)
+[2026-08-31 16:54:49] Created download interface of type 'SteamCache' (7) to host cache8-fra1.steamcontent.com (cache8-fra1.steamcontent.com)
+[2026-08-31 16:54:49] Created download interface of type 'SteamCache' (7) to host cache9-fra2.steamcontent.com (cache9-fra2.steamcontent.com)
+[2026-08-31 16:54:49] HTTP/2 available
+[2026-08-31 16:54:49] Created dual-stack http client
+[2026-08-31 16:54:50] HTTP (CDN,11) - steampipe.akamaized.net (0.0.0.0:0 / 0.0.0.0:0, host: steampipe.akamaized.net): AuthenticateDepotID (1) - Success!
+[2026-08-31 16:54:53] HTTPS (CDN,11) - steampipe.akamaized.net ([2a02:2d8:3:805::8b2d:cf70]:443 / [2a02:2d8:3:805::8b2d:cf70]:443, host: steampipe.akamaized.net): Negotiated HTTP/2
+[2026-08-31 16:54:53] HTTPS (SteamCache,151) - cache10-fra2.steamcontent.com ([2a01:bc80:c:101::9b85:e214]:443 / [2a01:bc80:c:101::9b85:e214]:443, host: cache10-fra2.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:54:53] HTTP/2 (SteamCache,151) - cache10-fra2.steamcontent.com ([2a01:bc80:c:101::9b85:e214]:443 / [2a01:bc80:c:101::9b85:e214]:443, host: cache10-fra2.steamcontent.com): cache10-fra2.steamcontent.com/depot/71/manifest/3982364535202188842/5/15978419598252235614 - manifest request received 200 (OK) HTTP response
+[2026-08-31 16:54:55] HTTP/2 (CDN,11) - steampipe.akamaized.net ([2a02:2d8:3:805::8b2d:cf70]:443 / [2a02:2d8:3:805::8b2d:cf70]:443, host: steampipe.akamaized.net): steampipe.akamaized.net/depot/1/manifest/2667117727132184734/5/5153293283046748683 - manifest request received 200 (OK) HTTP response
+[2026-08-31 16:54:56] HTTP/2 (CDN,11) - steampipe.akamaized.net ([2a02:2d8:3:805::8b2d:cf70]:443 / [2a02:2d8:3:805::8b2d:cf70]:443, host: steampipe.akamaized.net): AuthenticateDepotID (5) - Success!
+[2026-08-31 16:54:59] HTTP/2 (CDN,11) - steampipe.akamaized.net ([2a02:2d8:3:805::8b2d:cf7a]:443 / [2a02:2d8:3:805::8b2d:cf7a]:443, host: steampipe.akamaized.net): steampipe.akamaized.net/depot/5/manifest/2602921513184876182/5/5196734325055511220 - manifest request received 200 (OK) HTTP response
+[2026-08-31 16:55:00] HTTPS (SteamCache,150) - cache9-fra2.steamcontent.com ([2a01:bc80:c:100::9b85:e204]:443 / [2a01:bc80:c:100::9b85:e204]:443, host: cache9-fra2.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:55:00] HTTP/2 (SteamCache,150) - cache9-fra2.steamcontent.com ([2a01:bc80:c:100::9b85:e204]:443 / [2a01:bc80:c:100::9b85:e204]:443, host: cache9-fra2.steamcontent.com): cache9-fra2.steamcontent.com/depot/1004/manifest/5612541580377302256/5/18331234454526131559 - manifest request received 200 (OK) HTTP response
+[2026-08-31 16:55:00] AppID 90 App update changed : Running Update,
+[2026-08-31 16:55:00] AppID 90 App update changed : Running Update,Verifying Installed,
+[2026-08-31 16:55:00] AppID 90 App update changed : Running Update,
+[2026-08-31 16:55:00] AppID 90 App update changed : Running Update,Preallocating,
+[2026-08-31 16:55:00] AppID 10 preallocated 141 files (227 MB) 
+[2026-08-31 16:55:01] AppID 70 preallocated 238 files (373 MB) 
+[2026-08-31 16:55:01] AppID 90 preallocated 19 files (74 MB) 
+[2026-08-31 16:55:01] AppID 90 App update changed : Running Update,
+[2026-08-31 16:55:01] AppID 10 update started : download 0/149760208, store 0/0, reuse 0/0, delta 0/0, stage 0/292340389 
+[2026-08-31 16:55:01] AppID 10 state changed : Update Required,Shared Only,Update Running,Update Started,
+[2026-08-31 16:55:01] AppID 70 update started : download 0/268829392, store 0/0, reuse 0/0, delta 0/0, stage 0/529827940 
+[2026-08-31 16:55:01] AppID 70 state changed : Update Required,Shared Only,Update Running,Update Started,
+[2026-08-31 16:55:01] AppID 90 update started : download 0/28297360, store 0/0, reuse 0/0, delta 0/0, stage 0/80821717 
+[2026-08-31 16:55:01] AppID 90 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-08-31 16:55:01] AppID 90 App update changed : Running Update,Downloading,Staging,
+[2026-08-31 16:55:01] Downloading 1249 chunks for depot 11 (3018093494972814332)
+[2026-08-31 16:55:02] HTTP (CDN,31) - fastly.cdn.steampipe.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: fastly.cdn.steampipe.steamcontent.com): AuthenticateDepotID (11) - Success!
+[2026-08-31 16:55:02] HTTP/2 (CDN,11) - steampipe.akamaized.net ([2a02:2d8:3:805::8b2d:cf7a]:443 / [2a02:2d8:3:805::8b2d:cf7a]:443, host: steampipe.akamaized.net): AuthenticateDepotID (11) - Success!
+[2026-08-31 16:55:04] HTTPS (SteamCache,476) - cache16-fra2.steamcontent.com ([2a01:bc80:c:103::9b85:e235]:443 / [2a01:bc80:c:103::9b85:e235]:443, host: cache16-fra2.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:55:06] HTTPS (SteamCache,82) - cache8-fra1.steamcontent.com ([2a01:bc80:5:112::6]:443 / [2a01:bc80:5:112::6]:443, host: cache8-fra1.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:55:07] Increasing target number of download connections to 9 (rate was 0.000, now 1.905)
+[2026-08-31 16:55:07] Created download interface of type 'SteamCache' (7) to host cache4-fra1.steamcontent.com (cache4-fra1.steamcontent.com)
+[2026-08-31 16:55:11] HTTPS (SteamCache,244) - cache4-fra1.steamcontent.com ([2a01:bc80:5:112::5]:443 / [2a01:bc80:5:112::5]:443, host: cache4-fra1.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:55:20] Increasing target number of download connections to 10 (rate was 1.905, now 5.918)
+[2026-08-31 16:55:20] Created download interface of type 'SteamCache' (7) to host cache20-fra2.steamcontent.com (cache20-fra2.steamcontent.com)
+[2026-08-31 16:55:23] HTTPS (SteamCache,480) - cache20-fra2.steamcontent.com ([2a01:bc80:c:103::9b85:e239]:443 / [2a01:bc80:c:103::9b85:e239]:443, host: cache20-fra2.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:55:32] Increasing target number of download connections to 11 (rate was 5.918, now 7.260)
+[2026-08-31 16:55:32] Created download interface of type 'SteamCache' (7) to host cache1-fra1.steamcontent.com (cache1-fra1.steamcontent.com)
+[2026-08-31 16:55:45] HTTPS (SteamCache,241) - cache1-fra1.steamcontent.com ([2a01:bc80:5:111::6]:443 / [2a01:bc80:5:111::6]:443, host: cache1-fra1.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:55:54] Increasing target number of download connections to 12 (rate was 7.260, now 10.211)
+[2026-08-31 16:55:54] Created download interface of type 'SteamCache' (7) to host cache12-fra2.steamcontent.com (cache12-fra2.steamcontent.com)
+[2026-08-31 16:55:59] HTTPS (SteamCache,237) - cache12-fra2.steamcontent.com ([2a01:bc80:c:103::9b85:e234]:443 / [2a01:bc80:c:103::9b85:e234]:443, host: cache12-fra2.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:56:02] HTTPS (SteamCache,192) - cache7-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c605]:443 / [2a01:bc80:1:100::a2fe:c605]:443, host: cache7-sto1.steamcontent.com): Failed to issue HTTP request for depot 11
+[2026-08-31 16:56:02] HTTPS (SteamCache,192) - cache7-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c605]:443 / [2a01:bc80:1:100::a2fe:c605]:443, host: cache7-sto1.steamcontent.com): Disabling dual-stack for this connection
+[2026-08-31 16:56:03] HTTPS (SteamCache,212) - cache2-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c610]:443 / [2a01:bc80:1:100::a2fe:c610]:443, host: cache2-sto1.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:56:07] Increasing target number of download connections to 13 (rate was 10.211, now 14.832)
+[2026-08-31 16:56:07] Current download rate: 14.832 Mbps
+[2026-08-31 16:56:07] Created download interface of type 'SteamCache' (7) to host cache9-sto1.steamcontent.com (cache9-sto1.steamcontent.com)
+[2026-08-31 16:56:58] HTTPS (SteamCache,192) - cache7-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c605]:443 / [2a01:bc80:1:100::a2fe:c605]:443, host: cache7-sto1.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:56:58] HTTPS (SteamCache,265) - cache9-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c608]:443 / [2a01:bc80:1:100::a2fe:c608]:443, host: cache9-sto1.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:57:08] Current download rate: 10.261 Mbps
+[2026-08-31 16:57:27] AppID 90 App update changed : Running Update,
+[2026-08-31 16:57:27] AppID 90 App update changed : Running Update,Downloading,Staging,
+[2026-08-31 16:57:27] Downloading 4341 chunks for depot 1 (2667117727132184734)
+[2026-08-31 16:57:27] HTTP/2 (SteamCache,212) - cache2-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c610]:443 / [2a01:bc80:1:100::a2fe:c610]:443, host: cache2-sto1.steamcontent.com): Connection is idle, have 1 chunk download failures, closing
+[2026-08-31 16:57:27] HTTP/2 (SteamCache,212) - cache2-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c610]:443 / [2a01:bc80:1:100::a2fe:c610]:443, host: cache2-sto1.steamcontent.com): Closing connection
+[2026-08-31 16:57:27] stats: (SteamCache, 212) cache2-sto1.steamcontent.com: 2481824 Bytes, 137 sec (0.15 Mbps). 33 Hits / 0 Misses (100 %, 100 % bytes), score 0.9026
+[2026-08-31 16:57:27] Moving to source priority class '1'
+[2026-08-31 16:57:27] Created download interface of type 'CDN' (2) to host google2.cdn.steampipe.steamcontent.com (google2.cdn.steampipe.steamcontent.com)
+[2026-08-31 16:57:27] HTTP/2 (SteamCache,192) - cache7-sto1.steamcontent.com (162.254.198.5:443 / 162.254.198.5:443, host: cache7-sto1.steamcontent.com): Connection is idle, have 1 chunk download failures, closing
+[2026-08-31 16:57:27] HTTP/2 (SteamCache,192) - cache7-sto1.steamcontent.com (162.254.198.5:443 / 162.254.198.5:443, host: cache7-sto1.steamcontent.com): Closing connection
+[2026-08-31 16:57:27] stats: (SteamCache, 192) cache7-sto1.steamcontent.com: 7716240 Bytes, 132 sec (0.47 Mbps). 55 Hits / 0 Misses (100 %, 100 % bytes), score 0.8998
+[2026-08-31 16:57:27] Created download interface of type 'SteamCache' (7) to host cache22-fra2.steamcontent.com (cache22-fra2.steamcontent.com)
+[2026-08-31 16:57:27] HTTP/2 (SteamCache,265) - cache9-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c608]:443 / [2a01:bc80:1:100::a2fe:c608]:443, host: cache9-sto1.steamcontent.com): Connection is idle, have 2 chunk download failures, closing
+[2026-08-31 16:57:27] HTTP/2 (SteamCache,265) - cache9-sto1.steamcontent.com ([2a01:bc80:1:100::a2fe:c608]:443 / [2a01:bc80:1:100::a2fe:c608]:443, host: cache9-sto1.steamcontent.com): Closing connection
+[2026-08-31 16:57:27] stats: (SteamCache, 265) cache9-sto1.steamcontent.com: 1076608 Bytes, 65 sec (0.13 Mbps). 11 Hits / 0 Misses (100 %, 100 % bytes), score 0.9122
+[2026-08-31 16:57:27] Created download interface of type 'SteamCache' (7) to host cache3-fra2.steamcontent.com (cache3-fra2.steamcontent.com)
+[2026-08-31 16:57:27] HTTP (CDN,35) - google2.cdn.steampipe.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: google2.cdn.steampipe.steamcontent.com): AuthenticateDepotID (1) - Success!
+[2026-08-31 16:57:27] HTTPS (CDN,31) - fastly.cdn.steampipe.steamcontent.com ([2a04:4e42:92::850]:443 / [2a04:4e42:92::850]:443, host: fastly.cdn.steampipe.steamcontent.com): AuthenticateDepotID (1) - Success!
+[2026-08-31 16:57:35] HTTPS (SteamCache,482) - cache22-fra2.steamcontent.com ([2a01:bc80:c:100::9b85:e20b]:443 / [2a01:bc80:c:100::9b85:e20b]:443, host: cache22-fra2.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:57:36] HTTPS (SteamCache,153) - cache3-fra2.steamcontent.com ([2a01:bc80:c:102::9b85:e227]:443 / [2a01:bc80:c:102::9b85:e227]:443, host: cache3-fra2.steamcontent.com): Negotiated HTTP/2
+[2026-08-31 16:58:09] Current download rate: 11.526 Mbps
