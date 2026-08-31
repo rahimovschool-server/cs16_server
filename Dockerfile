@@ -1,6 +1,6 @@
 FROM debian:bullseye-slim
 
-ENV USER root
+ENV USER=root
 
 # Install dependencies required for steamcmd and hlds
 RUN dpkg --add-architecture i386 && \
@@ -9,10 +9,10 @@ RUN dpkg --add-architecture i386 && \
 
 WORKDIR /server
 
-# Download and extract SteamCMD
+# Download and extract SteamCMD using curl (more reliable than wget here)
 RUN mkdir -p /server/steamcmd && \
     cd /server/steamcmd && \
-    wget -qO- https://steamcmd.steamcommunity.com/sq/steamcmd_linux.tar.gz | tar zxf -
+    curl -sqL "https://steamcmd.steamcommunity.com/sq/steamcmd_linux.tar.gz" | tar zxvf -
 
 # Download CS 1.6 server (running twice to fix app 90 bug)
 RUN /server/steamcmd/steamcmd.sh +login anonymous +force_install_dir /server/hlds +app_update 90 validate +quit || true
@@ -22,15 +22,15 @@ WORKDIR /server/hlds
 
 # Install Metamod
 RUN mkdir -p cstrike/addons/metamod/dlls && \
-    wget -qO- https://github.com/Bots-United/metamod-p/releases/download/v1.21p37/metamod-P-1.21p37-linux_i586.tar.gz | tar -xzf - -C cstrike/addons/metamod/dlls && \
+    curl -sqL "https://github.com/Bots-United/metamod-p/releases/download/v1.21p37/metamod-P-1.21p37-linux_i586.tar.gz" | tar -xzf - -C cstrike/addons/metamod/dlls && \
     echo "linux addons/metamod/dlls/metamod_i386.so" > cstrike/addons/metamod/plugins.ini
 
 # Edit liblist.gam to load Metamod instead of default CS dll
 RUN sed -i 's/gamedll_linux "dlls\/cs.so"/gamedll_linux "addons\/metamod\/dlls\/metamod_i386.so"/g' cstrike/liblist.gam
 
 # Install AmxModX
-RUN wget -qO- http://www.amxmodx.org/release/amxmodx-1.8.2-base-linux.tar.gz | tar -xzf - -C cstrike/ && \
-    wget -qO- http://www.amxmodx.org/release/amxmodx-1.8.2-cstrike-linux.tar.gz | tar -xzf - -C cstrike/
+RUN curl -sqL "http://www.amxmodx.org/release/amxmodx-1.8.2-base-linux.tar.gz" | tar -xzf - -C cstrike/ && \
+    curl -sqL "http://www.amxmodx.org/release/amxmodx-1.8.2-cstrike-linux.tar.gz" | tar -xzf - -C cstrike/
 
 # Enable AmxModX in Metamod
 RUN echo "linux addons/amxmodx/dlls/amxmodx_mm_i386.so" >> cstrike/addons/metamod/plugins.ini
