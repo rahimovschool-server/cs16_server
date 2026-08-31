@@ -9,7 +9,7 @@ RUN dpkg --add-architecture i386 && \
 
 WORKDIR /server
 
-# Download and extract SteamCMD using curl (more reliable than wget here)
+# Download and extract SteamCMD using curl
 RUN mkdir -p /server/steamcmd && \
     cd /server/steamcmd && \
     curl -sqL "https://steamcmd.steamcommunity.com/sq/steamcmd_linux.tar.gz" | tar zxvf -
