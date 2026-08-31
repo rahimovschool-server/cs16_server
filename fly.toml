@@ -18,14 +18,6 @@ primary_region = "ams"
   [[services.ports]]
     port = 27015
 
-[checks]
-  [checks.alive]
-    grace_period = "30s"
-    interval = "15s"
-    restart_limit = 3
-    timeout = "2s"
-    type = "tcp"
-
 [[vm]]
   memory = "512mb"
   cpu_kind = "shared"
