@@ -1,0 +1,32 @@
+app = "cs16-server"
+primary_region = "ams"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[[services]]
+  internal_port = 27015
+  protocol = "udp"
+
+  [[services.ports]]
+    port = 27015
+
+[[services]]
+  internal_port = 27015
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 27015
+
+[checks]
+  [checks.alive]
+    grace_period = "30s"
+    interval = "15s"
+    restart_limit = 3
+    timeout = "2s"
+    type = "tcp"
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1
