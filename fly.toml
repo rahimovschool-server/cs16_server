@@ -1,9 +1,6 @@
 app = "cs16-server"
 primary_region = "ams"
 
-[build]
-  dockerfile = "Dockerfile"
-
 [[services]]
   internal_port = 27015
   protocol = "udp"
