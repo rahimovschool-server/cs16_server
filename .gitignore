@@ -1,0 +1,7 @@
+# Git'ga katta server fayllarini qo'shmaslik uchun
+steamcmd/
+hlds/
+*.tar.gz
+*.zip
+*.so
+*.dll
