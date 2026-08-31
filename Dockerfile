@@ -1,48 +1,8 @@
-FROM cm2network/steamcmd:latest
+FROM archont94/counter-strike1.6:latest
 
-USER root
-
-# Cache bust: 2026-08-31-v3
-# HLDS yuklab olish - to'g'ri yo'l bilan
-RUN /home/steam/steamcmd/steamcmd.sh \
-        +login anonymous \
-        +force_install_dir /home/steam/hlds \
-        +app_update 90 validate \
-        +quit || true
-
-RUN /home/steam/steamcmd/steamcmd.sh \
-        +login anonymous \
-        +force_install_dir /home/steam/hlds \
-        +app_update 90 validate \
-        +quit || true
-
-WORKDIR /home/steam/hlds
-
-# Metamod o'rnatish
-RUN apt-get update && apt-get install -y curl ca-certificates && \
-    mkdir -p cstrike/addons/metamod/dlls && \
-    curl -sL -o metamod.tar.gz "https://sourceforge.net/projects/metamod-p/files/Metamod-P%20Binaries/1.21p37/metamod-p-1.21p37-linux_i686.tar.gz/download" && \
-    tar -xzf metamod.tar.gz -C cstrike/addons/metamod/dlls && \
-    rm metamod.tar.gz && \
-    echo "linux addons/metamod/dlls/metamod_i386.so" > cstrike/addons/metamod/plugins.ini
-
-# liblist.gam ni yangilash
-RUN sed -i 's/gamedll_linux "dlls\/cs.so"/gamedll_linux "addons\/metamod\/dlls\/metamod_i386.so"/g' cstrike/liblist.gam
-
-# AmxModX o'rnatish
-RUN curl -sL -o base.tar.gz http://www.amxmodx.org/release/amxmodx-1.8.2-base-linux.tar.gz && \
-    tar -xzf base.tar.gz -C cstrike/ && rm base.tar.gz && \
-    curl -sL -o cstrike.tar.gz http://www.amxmodx.org/release/amxmodx-1.8.2-cstrike-linux.tar.gz && \
-    tar -xzf cstrike.tar.gz -C cstrike/ && rm cstrike.tar.gz
-
-RUN echo "linux addons/amxmodx/dlls/amxmodx_mm_i386.so" >> cstrike/addons/metamod/plugins.ini
-
-RUN mkdir -p ~/.steam/sdk32 && \
-    ln -sf /home/steam/.steam/sdk32/steamclient.so ~/.steam/sdk32/steamclient.so || true
-
-COPY server.cfg /home/steam/hlds/cstrike/server.cfg
+# Server konfiguratsiyasini ko'chirish
+COPY server.cfg /hlds/cstrike/server.cfg
 
 EXPOSE 27015/udp
 EXPOSE 27015/tcp
-
-CMD ["/home/steam/hlds/hlds_run", "-game", "cstrike", "-strictportbind", "+ip", "0.0.0.0", "+port", "27015", "+map", "de_dust2", "+maxplayers", "32"]
+EXPOSE 80/tcp
